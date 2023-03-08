@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-light" style="border:7px solid white">
+    <form method="post" action="/Vehicles/Create">
+        <fieldset>
+            <legend>Add vehicle:</legend>
+            <hr />
+            <div class="mb-3">
+                <label for="inputRegistration" class="form-label">Registration:</label>
+                <input type="text" class="form-control" id="inputRegistration" name="registration" />
+            </div>
+            <div class="mb-3">
+                <label for="inputBrand" class="form-label">Brand:</label>
+                <input type="text" class="form-control" id="inputBrand" name="brand" />
+            </div>
+            <div class="mb-3">
+                <label for="inputModel" class="form-label">Model:</label>
+                <input type="text" class="form-control" id="inputModel" name="model" />
+            </div>
+            <div class="mb-3">
+                <label for="selectColor" class="form-label">Color:</label>
+                <select id="selectColor" class="form-select" name="color" asp-items="@Html.GetEnumSelectList<Color>()">
+                    <option selected disabled>Choose color</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selectFuel" class="form-label">Fuel:</label>
+                <select id="selectFuel" class="form-select" name="fuel" asp-items="@Html.GetEnumSelectList<Fuel>()">
+                    <option selected disabled>Choose fuel</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="inputPrice" class="form-label">Price:</label>
+                <input type="number" class="form-control" id="inputPrice" name="price" />
+            </div>
+            <div class="mb-3">
+                <label for="inputPhoto" class="form-label">Photo URL:</label>
+                <input type="text" class="form-control" id="inputPhoto" name="photo" />
+            </div>
+            <div class="mb-3">
+                <label for="selectLocation" class="form-label">Location:</label>
+                <select id="selectLocation" class="form-select" name="location">
+                    <option selected disabled>Choose location</option>
+                    @foreach (Location l in ViewBag.locations)
+                    {
+                        <option value="@l.Id">@l.Name</option>
+                    }
+                </select>
+            </div>
+            <hr />
+            <div class="d-grid gap-2">
+                <button class="btn btn-dark text-white" type="submit">Add Vehicle</button>
+            </div>
+            <hr />
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">Back</a>
+</div>

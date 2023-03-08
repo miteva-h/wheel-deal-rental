@@ -1,0 +1,57 @@
+﻿@model List<WheelDealRental.Domain.DomainModels.Vehicle>
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Microsoft.AspNetCore.Identity
+@using WheelDealRental.Domain.Identity
+@inject SignInManager<WheelDealRental.Domain.Identity.ERentalUser> SignInManager
+@inject UserManager<WheelDealRental.Domain.Identity.ERentalUser> UserManager
+
+<div class="container">
+
+    @if ((SignInManager.IsSignedIn(User)) && (UserManager.GetUserAsync(User).Result.Role == Role.ADMIN))
+    {
+        <div class="row d-flex justify-content-center"><a href="/Vehicles/Create" class="btn btn-warning text-white col-8">Add new vehicle</a></div>
+    }
+    @if (Model.Count > 0)
+    {
+
+        <hr />
+        <div class="row">
+
+            @foreach (var p in Model)
+            {
+
+                <div class="card border-dark mr-5" style="width: 22rem;">
+                    <img src="@p.Photo" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="/Vehicles/Details/@p.Id" style="text-decoration:none;" class="text-dark">@p.Brand @p.Model</a></h5>
+                        <p class="card-text">@p.Price $</p>
+                    </div>
+
+                    @if ((SignInManager.IsSignedIn(User)) && (UserManager.GetUserAsync(User).Result.Role == Role.ADMIN))
+                    {
+                        @:<div class="card-body">
+                            <a href="/Vehicles/Edit/@p.Id" class="btn btn-block btn-warning text-white col-12">Edit</a>
+                            <a href="/Vehicles/Delete/@p.Id" class="btn btn-block btn-danger col-12">Delete</a>
+                        @:</div>
+                    }
+                </div>
+
+
+
+            }
+        </div>
+    }
+    else
+    {
+        <h4 class="text-center mt-4 text-danger">There are no currently available vehicles.</h4>
+
+    }
+</div>
+<div>
+<a class="btn btn-success" asp-action="Index">Back</a>
+</div>

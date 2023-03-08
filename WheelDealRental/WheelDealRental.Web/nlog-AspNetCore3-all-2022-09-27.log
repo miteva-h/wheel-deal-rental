@@ -1,0 +1,692 @@
+2022-09-27 22:26:30.6586|0|DEBUG|WheelDealRental.Web.Program|init main 
+2022-09-27 22:26:38.1571|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-09-27 22:26:38.3100|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Hristina\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2022-09-27 22:26:38.3400|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Hristina\AppData\Local\ASP.NET\DataProtection-Keys\key-91906005-b584-4472-8077-ccda16e1132e.xml'. 
+2022-09-27 22:26:38.3668|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Hristina\AppData\Local\ASP.NET\DataProtection-Keys\key-f779ab13-43e1-4fb6-8536-e7263b2355ad.xml'. 
+2022-09-27 22:26:38.4075|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {91906005-b584-4472-8077-ccda16e1132e}. 
+2022-09-27 22:26:38.4173|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {f779ab13-43e1-4fb6-8536-e7263b2355ad}. 
+2022-09-27 22:26:38.4361|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {91906005-b584-4472-8077-ccda16e1132e} with expiration date 2022-10-13 13:17:13Z as default key. 
+2022-09-27 22:26:38.6337|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-09-27 22:26:38.6337|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2022-09-27 22:26:38.6337|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.13.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-09-27 22:26:38.6488|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2022-09-27 22:26:38.6488|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2022-09-27 22:26:38.6488|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {91906005-b584-4472-8077-ccda16e1132e} as the default key. 
+2022-09-27 22:26:38.6617|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {91906005-b584-4472-8077-ccda16e1132e} was loaded during application startup. 
+2022-09-27 22:26:41.9446|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WheelDealRental.Web 
+2022-09-27 22:26:41.9446|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-09-27 22:26:41.9446|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-09-27 22:26:41.9446|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Web 
+2022-09-27 22:26:41.9446|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-09-27 22:26:42.0982|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44313/   
+2022-09-27 22:26:42.1044|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-09-27 22:26:42.1044|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:26:42.3226|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path / does not match a supported file type 
+2022-09-27 22:26:42.3895|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/' 
+2022-09-27 22:26:42.3984|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/' 
+2022-09-27 22:26:42.3984|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web)' 
+2022-09-27 22:26:42.4816|0|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing unprotect operation to key {91906005-b584-4472-8077-ccda16e1132e} with purposes ('C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Web', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2022-09-27 22:26:43.0213|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-09-27 22:26:44.3256|0|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}. 
+2022-09-27 22:26:44.3256|0|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}. 
+2022-09-27 22:26:44.6461|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:26:45.2290|0|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ERentalUser>(
+    asyncEnumerable: new QueryingEnumerable<ERentalUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, ERentalUser>, 
+        WheelDealRental.Repository.ApplicationDbContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken) 
+2022-09-27 22:26:45.3267|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:26:45.6676|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (334ms). 
+2022-09-27 22:26:45.6971|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.2889|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.3367|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0 
+2022-09-27 22:26:50.5322|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (225ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0 
+2022-09-27 22:26:50.6822|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'ERentalUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.7765|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:26:50.7765|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.8006|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.9225|0|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Claim>, 
+    WheelDealRental.Repository.ApplicationDbContext, 
+    null
+) 
+2022-09-27 22:26:50.9225|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:26:50.9225|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:26:50.9225|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.9280|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.9280|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+2022-09-27 22:26:50.9280|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0 
+2022-09-27 22:26:50.9630|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.9770|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:50.9901|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was successfully authenticated. 
+2022-09-27 22:26:50.9901|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web)' 
+2022-09-27 22:26:51.0206|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider 
+2022-09-27 22:26:51.0738|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WheelDealRental.Web.Controllers.HomeController (WheelDealRental.Web). 
+2022-09-27 22:26:51.0738|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:26:51.0738|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:26:51.0738|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2022-09-27 22:26:51.0738|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:26:51.0738|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:26:51.0738|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:51.0738|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:51.0738|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.HomeController (WheelDealRental.Web) 
+2022-09-27 22:26:51.0846|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.HomeController (WheelDealRental.Web) 
+2022-09-27 22:26:51.0846|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-09-27 22:26:51.0846|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:51.0846|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:51.0846|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:26:51.1128|0|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<Location>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Location>, 
+    WheelDealRental.Repository.ApplicationDbContext, 
+    null
+) 
+2022-09-27 22:26:51.1192|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:26:51.1192|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:26:51.1192|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:51.1192|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:51.1192|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [l].[Id], [l].[Close], [l].[Name], [l].[Open], [l].[Street], [l].[StreetNumber]
+FROM [Locations] AS [l] 
+2022-09-27 22:26:51.1310|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [l].[Id], [l].[Close], [l].[Name], [l].[Open], [l].[Street], [l].[StreetNumber]
+FROM [Locations] AS [l] 
+2022-09-27 22:26:51.1711|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Location' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:51.1812|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:26:51.1812|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:51.1812|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:51.1812|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 87.1795ms. 
+2022-09-27 22:26:51.1933|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:51.1933|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:51.1933|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-09-27 22:26:51.1933|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:51.1933|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:51.1933|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-09-27 22:26:51.1933|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view 'Index' in controller 'Home'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Login.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Account/Register.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Locations/Create.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Locations/Details.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Locations/Edit.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Locations/Index.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Review/Show.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_LoginPartial.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCarts/Create.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCarts/Delete.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCarts/Details.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCarts/Edit.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCarts/Index.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/ShoppingCarts/MakeOrder.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Vehicles/Create.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Vehicles/Details.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Vehicles/Edit.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/Vehicles/Index.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/AccessDenied.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmail.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ExternalLogin.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPassword.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Lockout.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Login.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWith2fa.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Logout.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Email.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/Index.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_Layout.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Manage/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/Register.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPassword.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_StatusMessage.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Account/_ViewImports.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/Error.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_Layout.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewImports.cshtml'. 
+2022-09-27 22:26:51.2106|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Initializing Razor view compiler with compiled view: '/Areas/Identity/Pages/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.2106|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Located compiled view for view at path '/Views/Home/Index.cshtml'. 
+2022-09-27 22:26:51.3305|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.3305|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Located compiled view for view at path '/Views/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.3572|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Could not find a file for view at path '/_ViewStart.cshtml'. 
+2022-09-27 22:26:51.3572|0|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2022-09-27 22:26:51.3721|0|DEBUG|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view path '/Views/Home/Index.cshtml' was found in 163.2818ms. 
+2022-09-27 22:26:51.8631|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_Layout' in controller 'Home'. 
+2022-09-27 22:26:51.8650|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Could not find a file for view at path '/Views/Home/_Layout.cshtml'. 
+2022-09-27 22:26:51.8650|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Located compiled view for view at path '/Views/Shared/_Layout.cshtml'. 
+2022-09-27 22:26:52.0092|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-09-27 22:26:52.0228|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and  
+2022-09-27 22:26:52.0402|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result / 
+2022-09-27 22:26:52.0402|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine|View lookup cache miss for view '_LoginPartial' in controller 'Home'. 
+2022-09-27 22:26:52.0402|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Could not find a file for view at path '/Views/Home/_LoginPartial.cshtml'. 
+2022-09-27 22:26:52.0402|0|TRACE|Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.RuntimeViewCompiler|Located compiled view for view at path '/Views/Shared/_LoginPartial.cshtml'. 
+2022-09-27 22:26:52.1258|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Page: /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-09-27 22:26:52.1258|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template Identity/Account/Manage for Page: /Account/Manage/Index resulting in /Identity/Account/Manage and  
+2022-09-27 22:26:52.1258|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Page: /Account/Manage/Index, Route: {controller=Home}/{action=Index}/{id?} with result /Identity/Account/Manage 
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /ShoppingCarts and  
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /ShoppingCarts 
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Locations and  
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Locations 
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress 
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Vehicles and  
+2022-09-27 22:26:52.1310|0|DEBUG|Microsoft.AspNetCore.Routing.DefaultLinkGenerator|Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Vehicles 
+2022-09-27 22:26:52.1615|0|TRACE|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector|Performing protect operation to key {91906005-b584-4472-8077-ccda16e1132e} with purposes ('C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Web', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2'). 
+2022-09-27 22:26:52.2032|0|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 1003.1476ms. 
+2022-09-27 22:26:52.2032|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ViewResult. 
+2022-09-27 22:26:52.2032|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:52.2032|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:52.2032|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:52.2032|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:52.2032|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web) in 1129.1385ms 
+2022-09-27 22:26:52.2032|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WheelDealRental.Web.Controllers.HomeController.Index (WheelDealRental.Web)' 
+2022-09-27 22:26:52.2234|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-09-27 22:26:52.2280|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 10136.3944ms 200 text/html; charset=utf-8 
+2022-09-27 22:26:58.4109|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44313/api/User/GetActiveOrders   
+2022-09-27 22:26:58.4130|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:26:58.4130|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/User/GetActiveOrders does not match a supported file type 
+2022-09-27 22:26:58.4130|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:26:58.4130|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' with route pattern 'api/User/GetActiveOrders' is valid for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:26:58.4130|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:26:58.4130|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:26:58.4130|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:26:58.4315|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetActiveOrders", controller = "User", page = "", area = ""}. Executing controller action with signature System.Collections.Generic.List`1[WheelDealRental.Domain.DomainModels.Order] GetActiveOrders() on controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web). 
+2022-09-27 22:26:58.4315|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:26:58.4315|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:26:58.4315|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-09-27 22:26:58.4315|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:26:58.4315|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-09-27 22:26:58.4315|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.4315|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.4315|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:26:58.5080|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:26:58.5080|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:26:58.5080|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:58.5080|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:58.5080|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:26:58.5080|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:26:58.5080|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:26:58.5242|0|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    WheelDealRental.Repository.ApplicationDbContext, 
+    null
+) 
+2022-09-27 22:26:58.5242|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:26:58.5242|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:26:58.5242|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:58.5242|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:58.5242|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:26:58.5395|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:58.5539|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:26:58.5675|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 56.0984ms. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:26:58.5675|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:26:58.5675|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-09-27 22:26:58.5675|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-09-27 22:26:58.5675|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-09-27 22:26:58.5675|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-09-27 22:26:58.5675|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-09-27 22:26:58.5675|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WheelDealRental.Domain.DomainModels.Order, WheelDealRental.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.6282|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:26:58.6282|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) in 196.8174ms 
+2022-09-27 22:26:58.6282|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:26:58.6282|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-09-27 22:26:58.6282|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 219.5843ms 200 application/json; charset=utf-8 
+2022-09-27 22:28:54.7542|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44313/api/User/GetActiveOrders   
+2022-09-27 22:28:54.7559|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:28:54.7559|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/User/GetActiveOrders does not match a supported file type 
+2022-09-27 22:28:54.7559|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:28:54.7559|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' with route pattern 'api/User/GetActiveOrders' is valid for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:28:54.7559|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:28:54.7717|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:28:54.7717|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetActiveOrders", controller = "User", page = "", area = ""}. Executing controller action with signature System.Collections.Generic.List`1[WheelDealRental.Domain.DomainModels.Order] GetActiveOrders() on controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web). 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-09-27 22:28:54.7717|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.7717|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.7717|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:28:54.8006|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:28:54.8006|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:28:54.8006|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:28:54.8006|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:28:54.8006|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:28:54.8006|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:28:54.8006|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:28:54.8037|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:28:54.8037|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13.8404ms. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-09-27 22:28:54.8037|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-09-27 22:28:54.8037|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WheelDealRental.Domain.DomainModels.Order, WheelDealRental.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-09-27 22:28:54.8037|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:28:54.8176|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:28:54.8176|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:28:54.8176|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.8176|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.8176|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.8176|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:28:54.8176|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) in 44.4466ms 
+2022-09-27 22:28:54.8176|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:28:54.8176|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-09-27 22:28:54.8176|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 64.6813ms 200 application/json; charset=utf-8 
+2022-09-27 22:31:30.2815|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44313/api/User/GetActiveOrders   
+2022-09-27 22:31:30.2815|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:31:30.2815|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/User/GetActiveOrders does not match a supported file type 
+2022-09-27 22:31:30.2815|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:31:30.2815|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' with route pattern 'api/User/GetActiveOrders' is valid for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:31:30.2868|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:31:30.2868|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetActiveOrders", controller = "User", page = "", area = ""}. Executing controller action with signature System.Collections.Generic.List`1[WheelDealRental.Domain.DomainModels.Order] GetActiveOrders() on controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web). 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-09-27 22:31:30.2868|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.2868|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.2868|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:31:30.3064|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:31:30.3064|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:31:30.3064|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:31:30.3064|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:31:30.3064|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:31:30.3064|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:31:30.3064|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:31:30.3064|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:31:30.3064|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:31:30.3064|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:31:30.3064|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:31:30.3064|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:31:30.3187|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:31:30.3187|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.1695ms. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-09-27 22:31:30.3187|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WheelDealRental.Domain.DomainModels.Order, WheelDealRental.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.3187|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:31:30.3187|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) in 33.9409ms 
+2022-09-27 22:31:30.3187|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:31:30.3187|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-09-27 22:31:30.3187|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 43.4595ms 200 application/json; charset=utf-8 
+2022-09-27 22:31:32.5992|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:44313/api/Admin/DeleteOrder application/json; charset=utf-8 45 
+2022-09-27 22:31:32.5992|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:31:32.5992|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2022-09-27 22:31:32.5992|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/api/Admin/DeleteOrder' 
+2022-09-27 22:31:32.5992|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-09-27 22:31:32.5992|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:31:32.6156|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 19.5209ms 404  
+2022-09-27 22:33:22.9735|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44313/api/User/GetActiveOrders   
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/User/GetActiveOrders does not match a supported file type 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' with route pattern 'api/User/GetActiveOrders' is valid for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:33:22.9749|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:33:22.9749|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetActiveOrders", controller = "User", page = "", area = ""}. Executing controller action with signature System.Collections.Generic.List`1[WheelDealRental.Domain.DomainModels.Order] GetActiveOrders() on controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web). 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:33:22.9749|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:33:22.9749|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:33:22.9749|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:33:22.9749|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:33:22.9898|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:33:22.9898|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.6173ms. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-09-27 22:33:22.9898|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-09-27 22:33:22.9898|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WheelDealRental.Domain.DomainModels.Order, WheelDealRental.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:33:22.9898|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:23.0086|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:23.0086|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:23.0086|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:33:23.0086|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) in 25.6669ms 
+2022-09-27 22:33:23.0086|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:33:23.0086|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-09-27 22:33:23.0086|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 36.5927ms 200 application/json; charset=utf-8 
+2022-09-27 22:33:41.0260|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:44313/api/Admin/DeleteOrder application/json; charset=utf-8 45 
+2022-09-27 22:33:41.0260|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:33:41.0260|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2022-09-27 22:33:41.0369|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/api/Admin/DeleteOrder' 
+2022-09-27 22:33:41.0369|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-09-27 22:33:41.0369|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:33:41.0369|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 18.3883ms 404  
+2022-09-27 22:34:24.0730|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44313/api/User/GetActiveOrders   
+2022-09-27 22:34:24.0730|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/User/GetActiveOrders does not match a supported file type 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' with route pattern 'api/User/GetActiveOrders' is valid for the request path '/api/User/GetActiveOrders' 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:34:24.0730|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:34:24.0730|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetActiveOrders", controller = "User", page = "", area = ""}. Executing controller action with signature System.Collections.Generic.List`1[WheelDealRental.Domain.DomainModels.Order] GetActiveOrders() on controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web). 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-09-27 22:34:24.0730|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.0730|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.0730|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:34:24.0843|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:34:24.0843|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:34:24.0843|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalPrice], [o].[UserId]
+FROM [Orders] AS [o] 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ApplicationDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:24.0843|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.3226ms. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-09-27 22:34:24.0843|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-09-27 22:34:24.0843|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[WheelDealRental.Domain.DomainModels.Order, WheelDealRental.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-09-27 22:34:24.0843|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.1022|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.1022|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.1022|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:24.1022|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web) in 20.7149ms 
+2022-09-27 22:34:24.1022|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WheelDealRental.Web.Controllers.Api.UserController.GetActiveOrders (WheelDealRental.Web)' 
+2022-09-27 22:34:24.1022|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-09-27 22:34:24.1022|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 30.2513ms 200 application/json; charset=utf-8 
+2022-09-27 22:34:25.9203|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:44313/api/User/DeleteOrder application/json; charset=utf-8 45 
+2022-09-27 22:34:25.9203|0|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-09-27 22:34:25.9203|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported 
+2022-09-27 22:34:25.9203|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/DeleteOrder' 
+2022-09-27 22:34:25.9203|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WheelDealRental.Web.Controllers.Api.UserController.DeleteOrder (WheelDealRental.Web)' with route pattern 'api/User/DeleteOrder' is valid for the request path '/api/User/DeleteOrder' 
+2022-09-27 22:34:25.9307|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WheelDealRental.Web.Controllers.Api.UserController.DeleteOrder (WheelDealRental.Web)' 
+2022-09-27 22:34:25.9307|0|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2022-09-27 22:34:25.9307|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WheelDealRental.Web.Controllers.Api.UserController.DeleteOrder (WheelDealRental.Web)' 
+2022-09-27 22:34:25.9674|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DeleteOrder", controller = "User", page = "", area = ""}. Executing controller action with signature System.Collections.Generic.List`1[WheelDealRental.Domain.DomainModels.Order] DeleteOrder(System.Guid) on controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web). 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-09-27 22:34:25.9674|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:25.9674|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter. 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:34:25.9674|0|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-09-27 22:34:25.9674|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WheelDealRental.Web.Controllers.Api.UserController (WheelDealRental.Web) 
+2022-09-27 22:34:25.9820|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'Id' of type 'System.Guid' ... 
+2022-09-27 22:34:25.9820|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'Id' of type 'System.Guid'. 
+2022-09-27 22:34:25.9820|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'Id' of type 'System.Guid'. 
+2022-09-27 22:34:25.9820|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'Id' of type 'System.Guid'. 
+2022-09-27 22:34:25.9820|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'Id' of type 'System.Guid' ... 
+2022-09-27 22:34:25.9820|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'Id' of type 'System.Guid'. 
+2022-09-27 22:34:25.9918|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:34:25.9918|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-09-27 22:34:25.9918|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:34:25.9918|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-09-27 22:34:25.9918|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.DeleteOrder (WheelDealRental.Web) - Validation state: Valid 
+2022-09-27 22:34:25.9918|0|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WheelDealRental.Web.Controllers.Api.UserController.DeleteOrder (WheelDealRental.Web) with arguments (00000000-0000-0000-0000-000000000000) 
+2022-09-27 22:34:26.1854|0|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Order>(
+    asyncEnumerable: new QueryingEnumerable<Order>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+        WheelDealRental.Repository.ApplicationDbContext, 
+        null
+    ), 
+    cancellationToken: queryContext.CancellationToken) 
+2022-09-27 22:34:26.1854|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-09-27 22:34:26.1854|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-09-27 22:34:26.1854|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:26.1854|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:26.1931|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[TotalPrice], [t].[UserId], [t].[Id0], [t].[AccessFailedCount], [t].[Address], [t].[ConcurrencyStamp], [t].[Email], [t].[EmailConfirmed], [t].[FirstName], [t].[LastName], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[Role], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t0].[Id], [t0].[From], [t0].[OrderId], [t0].[To], [t0].[VehicleId], [t0].[Id0], [t0].[Brand], [t0].[Color], [t0].[Fuel], [t0].[LocationId], [t0].[Model], [t0].[Photo], [t0].[Price], [t0].[Registration], [t0].[Id1], [t0].[Close], [t0].[Name], [t0].[Open], [t0].[Street], [t0].[StreetNumber]
+FROM (
+    SELECT TOP(2) [o].[Id], [o].[TotalPrice], [o].[UserId], [a].[Id] AS [Id0], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+    FROM [Orders] AS [o]
+    INNER JOIN [AspNetUsers] AS [a] ON [o].[UserId] = [a].[Id]
+    WHERE [o].[Id] = @__Id_0
+) AS [t]
+LEFT JOIN (
+    SELECT [v].[Id], [v].[From], [v].[OrderId], [v].[To], [v].[VehicleId], [v0].[Id] AS [Id0], [v0].[Brand], [v0].[Color], [v0].[Fuel], [v0].[LocationId], [v0].[Model], [v0].[Photo], [v0].[Price], [v0].[Registration], [l].[Id] AS [Id1], [l].[Close], [l].[Name], [l].[Open], [l].[Street], [l].[StreetNumber]
+    FROM [VehiclesInOrder] AS [v]
+    INNER JOIN [Vehicles] AS [v0] ON [v].[VehicleId] = [v0].[Id]
+    INNER JOIN [Locations] AS [l] ON [v0].[LocationId] = [l].[Id]
+) AS [t0] ON [t].[Id] = [t0].[OrderId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[Id], [t0].[Id0], [t0].[Id1] 
+2022-09-27 22:34:26.2540|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (62ms) [Parameters=[@__Id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[TotalPrice], [t].[UserId], [t].[Id0], [t].[AccessFailedCount], [t].[Address], [t].[ConcurrencyStamp], [t].[Email], [t].[EmailConfirmed], [t].[FirstName], [t].[LastName], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[Role], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName], [t0].[Id], [t0].[From], [t0].[OrderId], [t0].[To], [t0].[VehicleId], [t0].[Id0], [t0].[Brand], [t0].[Color], [t0].[Fuel], [t0].[LocationId], [t0].[Model], [t0].[Photo], [t0].[Price], [t0].[Registration], [t0].[Id1], [t0].[Close], [t0].[Name], [t0].[Open], [t0].[Street], [t0].[StreetNumber]
+FROM (
+    SELECT TOP(2) [o].[Id], [o].[TotalPrice], [o].[UserId], [a].[Id] AS [Id0], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+    FROM [Orders] AS [o]
+    INNER JOIN [AspNetUsers] AS [a] ON [o].[UserId] = [a].[Id]
+    WHERE [o].[Id] = @__Id_0
+) AS [t]
+LEFT JOIN (
+    SELECT [v].[Id], [v].[From], [v].[OrderId], [v].[To], [v].[VehicleId], [v0].[Id] AS [Id0], [v0].[Brand], [v0].[Color], [v0].[Fuel], [v0].[LocationId], [v0].[Model], [v0].[Photo], [v0].[Price], [v0].[Registration], [l].[Id] AS [Id1], [l].[Close], [l].[Name], [l].[Open], [l].[Street], [l].[StreetNumber]
+    FROM [VehiclesInOrder] AS [v]
+    INNER JOIN [Vehicles] AS [v0] ON [v].[VehicleId] = [v0].[Id]
+    INNER JOIN [Locations] AS [l] ON [v0].[LocationId] = [l].[Id]
+) AS [t0] ON [t].[Id] = [t0].[OrderId]
+ORDER BY [t].[Id], [t].[Id0], [t0].[Id], [t0].[Id0], [t0].[Id1] 
+2022-09-27 22:34:26.2540|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-09-27 22:34:26.2550|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 
+2022-09-27 22:34:26.2550|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'WheelDealRental' on server '(localdb)\mssqllocaldb'. 

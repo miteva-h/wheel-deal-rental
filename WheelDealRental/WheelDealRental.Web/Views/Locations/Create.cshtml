@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-light" style="border:7px solid white">
+    <form method="post" action="/Locations/Create">
+        <fieldset>
+            <legend>Add location:</legend>
+            <hr />
+            <div class="mb-3">
+                <label for="inputName" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="inputName" name="name" />
+            </div>
+            <div class="mb-3">
+                <label for="inputStreet" class="form-label">Street:</label>
+                <input type="text" class="form-control" id="inputStreet" name="street" />
+            </div>
+            <div class="mb-3">
+                <label for="inputStreetNumber" class="form-label">Street Number:</label>
+                <input type="text" class="form-control" id="inputStreetNumber" name="streetNumber" />
+            </div>
+            <div class="col-md-6">
+                <label for="open" class="form-label">Open</label>
+                <input type="time" class="form-control" id="open" name="open">
+            </div>
+            <div class="col-md-6">
+                <label for="close" class="form-label">Close</label>
+                <input type="time" class="form-control" id="close" name="close">
+            </div>
+            <hr />
+            <div class="d-grid gap-2">
+                <button class="btn btn-dark text-white" type="submit">Add Location</button>
+            </div>
+            <hr />
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">Back</a>
+</div>

@@ -1,0 +1,12 @@
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.csprojAssemblyReference.cache
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.AssemblyInfoInputs.cache
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.AssemblyInfo.cs
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\bin\Debug\netcoreapp3.1\WheelDealRental.Repository.deps.json
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\bin\Debug\netcoreapp3.1\WheelDealRental.Repository.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\bin\Debug\netcoreapp3.1\WheelDealRental.Repository.pdb
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.pdb
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.csproj.CopyComplete
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Repository\obj\Debug\netcoreapp3.1\WheelDealRental.Repository.pdb

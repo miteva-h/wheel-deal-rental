@@ -1,0 +1,9 @@
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.deps.json
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.dll
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.pdb
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\obj\Debug\netcoreapp3.1\WheelDealRental.Domain.csprojAssemblyReference.cache
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\obj\Debug\netcoreapp3.1\WheelDealRental.Domain.AssemblyInfoInputs.cache
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\obj\Debug\netcoreapp3.1\WheelDealRental.Domain.AssemblyInfo.cs
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\obj\Debug\netcoreapp3.1\WheelDealRental.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\obj\Debug\netcoreapp3.1\WheelDealRental.Domain.dll
+C:\Users\Hristina\source\repos\WheelDealRental\Domain\obj\Debug\netcoreapp3.1\WheelDealRental.Domain.pdb

@@ -1,0 +1,49 @@
+﻿@model WheelDealRental.Domain.DomainModels.Vehicle
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-light" style="border:7px solid white">
+    <form method="post" action="/Vehicles/Edit">
+        <fieldset>
+            <legend>Edit vehicle:</legend>
+            <hr />
+            <input type="hidden" value="@Model.Id" name="id" />
+            <div>
+                <img style="height:100px; width:auto; " src="@Model.Photo"/>
+            </div>
+            <div class="mb-3">
+                <label for="inputPhoto" class="form-label">Photo URL:</label>
+                <input type="text" class="form-control" id="inputPhoto" name="photo" value="@Model.Photo" />
+            </div>
+            <div class="mb-3">
+                <label for="inputPrice" class="form-label">Price:</label>
+                <input type="number" class="form-control" id="inputPrice" name="price" value="@Model.Price" />
+            </div>
+            <div class="mb-3">
+                <label for="selectLocation" class="form-label">Location:</label>
+                <select id="selectLocation" class="form-select" name="location">
+                    <option selected value="@Model.Location.Id">@Model.Location.Name</option>
+                    @foreach (Location l in ViewBag.locations)
+                    {
+                        @if (l.Id != Model.Location.Id)
+                        {
+                            <option value="@l.Id">@l.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <hr />
+            <div class="d-grid gap-2">
+                <button class="btn btn-dark text-white" type="submit">Edit Vehicle</button>
+            </div>
+            <hr />
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">Back</a>
+</div>

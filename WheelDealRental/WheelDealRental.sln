@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WheelDealRental", "WheelDealRental", "{F43F8984-2ABA-49E5-AB00-13A9DC87826A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WheelDealRental.Web", "WheelDealRental.Web\WheelDealRental.Web.csproj", "{40D226AF-819C-4478-89F1-924012784CD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WheelDealRental.Domain", "Domain\WheelDealRental.Domain.csproj", "{46B9EEB0-1BBC-400F-A3DE-3C72F75B1E55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WheelDealRental.Repository", "WheelDealRental.Repository\WheelDealRental.Repository.csproj", "{0FB1598E-2ECF-4279-A990-6CE98AC6564F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WheelDealRental.Service", "WheelDealRental.Service\WheelDealRental.Service.csproj", "{201506B0-E27D-42E9-B929-BD43EE74BB0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A2FF148A-E835-4EEA-87A5-575D6FE96EFB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40D226AF-819C-4478-89F1-924012784CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D226AF-819C-4478-89F1-924012784CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D226AF-819C-4478-89F1-924012784CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D226AF-819C-4478-89F1-924012784CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B9EEB0-1BBC-400F-A3DE-3C72F75B1E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B9EEB0-1BBC-400F-A3DE-3C72F75B1E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B9EEB0-1BBC-400F-A3DE-3C72F75B1E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B9EEB0-1BBC-400F-A3DE-3C72F75B1E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FB1598E-2ECF-4279-A990-6CE98AC6564F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FB1598E-2ECF-4279-A990-6CE98AC6564F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FB1598E-2ECF-4279-A990-6CE98AC6564F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FB1598E-2ECF-4279-A990-6CE98AC6564F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201506B0-E27D-42E9-B929-BD43EE74BB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201506B0-E27D-42E9-B929-BD43EE74BB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201506B0-E27D-42E9-B929-BD43EE74BB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201506B0-E27D-42E9-B929-BD43EE74BB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40D226AF-819C-4478-89F1-924012784CD0} = {F43F8984-2ABA-49E5-AB00-13A9DC87826A}
+		{46B9EEB0-1BBC-400F-A3DE-3C72F75B1E55} = {F43F8984-2ABA-49E5-AB00-13A9DC87826A}
+		{0FB1598E-2ECF-4279-A990-6CE98AC6564F} = {F43F8984-2ABA-49E5-AB00-13A9DC87826A}
+		{201506B0-E27D-42E9-B929-BD43EE74BB0B} = {F43F8984-2ABA-49E5-AB00-13A9DC87826A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDC844FD-155F-4DDC-800B-099A833CB0B1}
+	EndGlobalSection
+EndGlobal

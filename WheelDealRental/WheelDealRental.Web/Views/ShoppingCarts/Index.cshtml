@@ -1,0 +1,94 @@
+﻿@model WheelDealRental.Domain.DTO.ShoppingCartDto
+@using Microsoft.Extensions.Options
+@inject IOptions<WheelDealRental.Domain.StripeSettings> Stripe
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.VehiclesInShoppingCart.Count == 0)
+{
+    <hr />
+    <h1 class="text-center">Your Shopping Cart is empty!</h1>
+    <hr />
+    <a href="/Vehicles/Index" class="btn btn-success btn-lg btn-block text-white">Start by booking some vehicles</a>
+}
+else
+{
+    <br />
+    <hr />
+    <table class="table table-light table-striped">
+        <thead>
+            <tr>
+                <th>
+                    PHOTO
+                </th>
+                <th>
+                    DETAILS
+                </th>
+                <th>
+                    PRICE PER DAY
+                </th>
+                <th>
+                    DAYS
+                </th>
+                <th></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.VehiclesInShoppingCart.Count; i++)
+            {
+                var item = Model.VehiclesInShoppingCart[i];
+
+                <tr>
+                    <td><img src="@item.Vehicle.Photo" style=" height:100px; width:auto;" /></td>
+                    <td>
+                        <p>@item.Vehicle.Brand</p>
+                        <p>@item.Vehicle.Model</p>
+                        <p>@item.Vehicle.Registration</p>
+                        <p>@item.Vehicle.Color.ToString()</p>
+                        <p>@item.Vehicle.Fuel.ToString()</p>
+                    </td>
+                    <td>
+                        @item.Vehicle.Price $
+                    </td>
+                    <td>
+                        @item.From.ToString("dd.MM.yyyy") - @item.To.ToString("dd.MM.yyyy")
+                    </td>
+                    <td><a asp-controller="ShoppingCarts" asp-action="Delete" asp-route-id="@item.Vehicle.Id" class="btn btn-danger">Delete From Shopping Cart</a></td>
+                </tr>
+            }
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total price:</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>@Model.TotalPrice $</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <!-- <a asp-controller="ShoppingCarts" asp-action="PayOrder" class="btn border">Order</a> -->
+
+                    <form asp-controller="ShoppingCarts" asp-action="PayOrder" method="post">
+                        <article>
+                            <script src="https://checkout.stripe.com/checkout.js"
+                                    class="stripe-button"
+                                    data-key="@Stripe.Value.PublishableKey"
+                                    data-locale="auto"
+                                    data-description="WheelDealRental"
+                                    data-amount="@(Model.TotalPrice * 100)"
+                                    data-label="Pay $@Model.TotalPrice">
+                            </script>
+                        </article>
+                    </form>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+}

@@ -1,0 +1,14 @@
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Service.deps.json
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Service.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Service.pdb
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Repository.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Domain.pdb
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\bin\Debug\netcoreapp3.1\WheelDealRental.Repository.pdb
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.csprojAssemblyReference.cache
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.AssemblyInfoInputs.cache
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.AssemblyInfo.cs
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.csproj.CoreCompileInputs.cache
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.csproj.CopyComplete
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.dll
+C:\Users\Hristina\source\repos\WheelDealRental\WheelDealRental.Service\obj\Debug\netcoreapp3.1\WheelDealRental.Service.pdb

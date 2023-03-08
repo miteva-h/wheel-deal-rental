@@ -1,0 +1,45 @@
+﻿@model WheelDealRental.Domain.DomainModels.Location
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-light" style="border:7px solid white">
+    <form method="post" action="/Locations/Edit">
+        <fieldset>
+            <legend>Edit location:</legend>
+            <hr />
+            <input type="hidden" value="@Model.Id" name="id" />
+            <div class="mb-3">
+                <label for="inputName" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="inputName" name="name" value="@Model.Name"/>
+            </div>
+            <div class="mb-3">
+                <label for="inputStreet" class="form-label">Street:</label>
+                <input type="text" class="form-control" id="inputStreet" name="street" value="@Model.Street"/>
+            </div>
+            <div class="mb-3">
+                <label for="inputStreetNumber" class="form-label">Street Number:</label>
+                <input type="text" class="form-control" id="inputStreetNumber" name="streetNumber" value="@Model.StreetNumber"/>
+            </div>
+            <div class="col-md-6">
+                <label for="open" class="form-label">Open</label>
+                <input type="time" class="form-control" id="open" name="open" value="@Model.Open.TimeOfDay">
+            </div>
+            <div class="col-md-6">
+                <label for="close" class="form-label">Close</label>
+                <input type="time" class="form-control" id="close" name="close" value="@Model.Close.TimeOfDay">
+            </div>
+            <hr />
+            <div class="d-grid gap-2">
+                <button class="btn btn-dark text-white" type="submit">Edit Location</button>
+            </div>
+            <hr />
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">Back</a>
+</div>

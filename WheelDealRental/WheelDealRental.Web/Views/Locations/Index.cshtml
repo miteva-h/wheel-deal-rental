@@ -1,0 +1,76 @@
+﻿@model List<WheelDealRental.Domain.DomainModels.Location>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Identity
+@using WheelDealRental.Domain.Identity
+@inject SignInManager<WheelDealRental.Domain.Identity.ERentalUser> SignInManager
+@inject UserManager<WheelDealRental.Domain.Identity.ERentalUser> UserManager
+
+
+@if ((SignInManager.IsSignedIn(User)) && (UserManager.GetUserAsync(User).Result.Role == Role.ADMIN))
+{
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-warning col-8" asp-action="Create">Add new location</a>
+    </div>
+}
+<br />
+<hr />
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>
+                NAME
+            </th>
+            <th>
+                STREET
+            </th>
+            <th>
+                STREET NUMBER
+            </th>
+            <th>
+                OPEN
+            </th>
+            <th>
+                CLOSE
+            </th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Street
+                </td>
+                <td>
+                    @item.StreetNumber
+                </td>
+                <td>
+                    @item.Open.TimeOfDay
+                </td>
+                <td>
+                    @item.Close.TimeOfDay
+                </td>
+                <td>
+                    @if ((SignInManager.IsSignedIn(User)) && (UserManager.GetUserAsync(User).Result.Role == Role.ADMIN))
+                    {
+                        @:<a class="btn" href="Locations/Edit/@item.Id">Edit</a> |
+
+                        <a class="btn" href="Locations/Delete/@item.Id">Delete</a> @:|
+
+                      }
+
+                    <a class="btn" asp-action="Details" asp-route-id="@item.Id">Vehicles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

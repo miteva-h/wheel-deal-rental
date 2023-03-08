@@ -1,0 +1,120 @@
+﻿@model List<WheelDealRental.Domain.DomainModels.Location>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center" style="height:350px;">
+        <form method="get" action="/Locations/Details">
+            <div class=" d-flex justify-content-center align-items-center">
+
+                <select id="selectLocation" class="rounded border border-dark form-control" name="id">
+                    <option selected disabled>Choose location</option>
+                    @foreach (Location l in Model)
+                    {
+                        <option value="@l.Id">@l.Name</option>
+                    }
+                </select>
+                <button class="btn btn-warning border border-dark rounded ml-2" type="submit">Search</button>
+
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="d-flex justify-content-center align-items-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.79906755898!2d21.354850228884917!3d41.99906896258616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1660317165735!5m2!1sen!2smk" width="1000" height="400" style="border:1px solid black; margin-block-end:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card border border-dark rounded" style="width: 22rem;">
+                <img src="https://images.ctfassets.net/6m9bd13t776q/4MFkh7krw46geyyGSMCGwE/a9ad48d7cfc43f490153f629bf2ac23f/best-family-cars-beach-2160x1200.jpg?q=75&w=660" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Loyal customers</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Only this weekend!</h6>
+                    <p class="card-text">Only this weekend, for our most loyal customers who rely on us for more that 10 years, we have special offers with extreme low prices. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card border border-dark rounded" style="width: 22rem;">
+                <img src="https://www.homecatcher.net/img/sehir/24902221912771323361home-catcher-rentacar.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Membership card </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Only this week!</h6>
+                    <p class="card-text">If you have our membership card, thank you for your trust and come over to see what kind of bargains we have made for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+            <div class="card border border-dark rounded" style="width: 22rem;">
+                <img src="https://go2lloret.com/wp-content/uploads/2021/02/pap19-28-1614692789-rent-a-car.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">New friends</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Only this month!</h6>
+                    <p class="card-text">So you need a vehicle just for a couple of days? Become our new friend, because for our new customers this month we will have up to 15% discount on all of the vehicles. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-dark mt-5">
+        <div class="col-4 text-white text-center">
+            <h2>Partnerships</h2>
+            <p>
+                Over the years, we have made more than 15 partnerships with famous companies which are always here to provide us with new cars and car parts when in need.
+            </p>
+            <p style="margin-top:70px;">
+                <a href="https://www.vw.com/en.html" target="_blank"><img style="height:60px; width:90px;" src="https://cdn.am-online.com/media/1/root/vw-logo-sml-cut.jpg" /></a>
+                <a href="https://www.michelin.com/en/" target="_blank"><img style="height:60px; width:90px;" src="https://wheelz.me/wp-content/uploads/2021/02/Logo-michelin.jpg" /></a>
+                <a href="https://www.goodyear.com/en-US/international?expand=international" target="_blank"><img style="height:60px; width:90px;" src="https://www.goodyear.eu/content/dam/goodyear/consumer/common/seo/logo-goodyear-seo.jpg" /></a>
+                <a href="https://www.ford.com/" target="_blank"><img style="height:60px; width:90px;" src="https://images.news18.com/ibnlive/uploads/2021/02/1613109989_ford-logo.jpg" /></a>
+            </p>
+        </div>
+        <div class="col-4 text-white text-center">
+            <h2>Sponsors</h2>
+            <p>
+                All of our sponsors are companies that rely on us when they are in need of a vehicle so they sponsore us as a thank you for our always available service.
+            </p>
+            <p style="margin-top:70px;">
+                <a href="https://www.facebook.com/VitaminkaMakedonija/" target="_blank"><img style="height:60px; width:90px;" src="data:image/png;base64,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" /></a>
+                <a href="http://maya.mk/?lang=en" target="_blank"><img style="height:60px; width:90px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTktMbClbKpd-p9JscSb9pvRVmKX6CVnY1ZLQ&usqp=CAU" /></a>
+                <a href="https://evropa.com.mk/" target="_blank"><img style="height:60px; width:90px;" src="https://denar.mk/wp-content/uploads/2020/08/evropaad.jpg" /></a>
+            </p>
+        </div>
+        <div class="col-4 text-white text-center">
+            <h2>Contact & Follow us</h2>
+            <p>Become part of our family which grows day by day. Preview out available vehicles and book the chosen one. </p>
+            <p><img style="width:35px; height:35px;" src="https://thumbs.dreamstime.com/b/phone-icon-telephone-icon-which-i-going-to-present-you-unique-you-totally-different-any-other-icons-you-111739308.jpg" />+389 70 123 456</p>
+            <p>Or contact us via:</p>
+            <div class="socialNetworkIcons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <p></p>
+            <p></p>
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+    .socialNetworkIcons {
+        text-align: center;
+    }
+
+    .fa {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        padding-top: 9px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+    }
+</style>

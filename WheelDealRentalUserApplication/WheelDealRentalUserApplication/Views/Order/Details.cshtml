@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model WheelDealRentalUserApplication.Models.Order
+
+<div class="container">
+
+    <p>
+        <a class="btn btn-warning">@Model.AppUser.Email - @Model.AppUser.UserName</a>
+    </p>
+
+    @for (int i = 0; i < Model.VehiclesInOrder.Count(); i++)
+    {
+        var item = Model.VehiclesInOrder.ElementAt(i);
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+            <div class="col-md-3 m-4">
+                <div class="card border-dark mr-5" style="width: 22rem;">
+                    <img src="@item.Vehicle.Photo" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <table class="table table-dark">
+                            <tr><td>Location: </td><td>@item.Vehicle.Location.Name</td></tr>
+                            <tr><td>Registration: </td><td>@item.Vehicle.Registration</td></tr>
+                            <tr><td>Color: </td><td>@item.Vehicle.Color.ToString()</td></tr>
+                            <tr><td>Fuel: </td><td>@item.Vehicle.Fuel.ToString()</td></tr>
+                            <tr><td>Price: </td><td>@item.Vehicle.Price $</td></tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+</div>

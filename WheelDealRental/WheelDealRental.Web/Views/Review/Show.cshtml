@@ -1,0 +1,109 @@
+﻿@model List<Review>
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.AspNetCore.Identity
+@using WheelDealRental.Domain.Identity
+@inject SignInManager<WheelDealRental.Domain.Identity.ERentalUser> SignInManager
+@inject UserManager<WheelDealRental.Domain.Identity.ERentalUser> UserManager
+
+
+<h3 class="text-left">@ViewBag.Vehicle.Brand @ViewBag.Vehicle.Model</h3>
+
+<div class="container bg-dark">
+    <div class="row">
+        <div class="col-6">
+            <img src="@ViewBag.Vehicle.Photo" class="border border-dark rounded w-100" />
+        </div>
+        <div class="col-6 text-white">
+
+            <!--tabela so reviews-->
+            <table class="table table-hover text-white">
+                <thead>
+                    <tr>
+                        <th>UserName</th>
+                        <th>Stars</th>
+                        <th>Text</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var r in Model)
+                    {
+                        <tr>
+                            <td>@r.UserId</td>
+                            <td>
+                                @{
+                                    var x = 0;
+                                    for (; x < r.Stars; x++)
+                                    {
+                                        <img style="width:30px"  src=@Url.Content("/images/star_full.png") />
+                                    }
+                                    for (; x < 5; x++)
+                                    {
+                                        <img style="width:30px"  src=@Url.Content("/images/star_empty.png") />
+
+                                    }
+                                }
+
+                            </td>
+                            <td>@r.ReviewText</td> 
+                            @if((SignInManager.IsSignedIn(User)) && (UserManager.GetUserAsync(User).Result.Role == Role.USER) && (@r.UserId.Equals(User.Identity.Name)))
+                             {
+                        <form action="/Review/Delete" method="get">
+                            <input type="hidden" value="@r.Id" name="reviewId" />
+                            <input type="hidden" value="@ViewBag.Vehicle.Id" name="vehicleId" />
+                            <td><button type="submit" class="btn btn-light">Delete</button></td>
+                        </form>
+                             }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @if ((SignInManager.IsSignedIn(User)) && (UserManager.GetUserAsync(User).Result.Role == Role.USER))
+            {
+                <div>
+                    <form action="/Review/Add" method="post">
+                        <input type="hidden" value="@ViewBag.Vehicle.Id" name="vehicleId" />
+                        <input type="hidden" value="@User.Identity.Name" name="userId" />
+                        <input type="hidden" value="0" name="starHidden" id="starHidden" />
+                        <div class="d-flex justify-content-center">
+                            <img id="star1" style="width:50px" class="star-image-review star" src=@Url.Content("/images/star_empty.png") />
+                            <img id="star2" style="width:50px" class="star-image-review star" src=@Url.Content("/images/star_empty.png") />
+                            <img id="star3" style="width:50px" class="star-image-review star" src=@Url.Content("/images/star_empty.png") />
+                            <img id="star4" style="width:50px" class="star-image-review star" src=@Url.Content("/images/star_empty.png") />
+                            <img id="star5" style="width:50px" class="star-image-review star" src=@Url.Content("/images/star_empty.png") />
+                        </div>
+                        <textarea name="reviewText" class="w-100"></textarea>
+                        <button type="submit" class="btn btn-warning float-right">Submit</button>
+                    </form>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+<div>
+    <a class="btn btn-success" href="/Vehicles/Details/@ViewBag.Vehicle.Id">Back</a>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".star").on("click", function () {
+            var ova = $(this);
+            var num = parseInt(ova.attr("id").charAt(4));
+            var stars = $(".star");
+            for (var i = 0; i < 5; i++) {
+                if (i < num) {
+                    stars.get(i).setAttribute("src", "/images/star_full.png");
+                }
+                else {
+                    stars.get(i).setAttribute("src", "/images/star_empty.png");
+                }
+            }
+            $("#starHidden").val(num);
+            console.log($("#starHidden").val());
+        });
+    });
+</script>
